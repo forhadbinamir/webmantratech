@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+@font-face {
+    font-family: 'RogerexRegular';
+    src: url('fonts/RogerexRegular-L32KD.ttf');
+}
+
+@font-face {
+    font-family: 'Rogerexmedium';
+    src: url('fonts/RogerexMedium-PKm9x.ttf');
+}
+
+@font-face {
+    font-family: 'RogerexSemibold';
+    src: url('fonts/RogerexSemiBold-X30Jj.ttf');
+}
+
+@font-face {
+    font-family: 'Rogerexbold';
+    src: url('fonts/RogerexBold-7B7oR.ttf');
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('fonts/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'latoMedium';
+    src: url('fonts/Lato-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./images/Aelince\ Technologies\ Est\ Website_01-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+.header-area {
+    /* background: #000; */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.menu-items li {
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-explore {
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    background: #fec00f;
+
+    font-weight: 500;
+    font-family: 'latoMedium';
+}
+
+.btn-explore a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn-explore a:hover {
+    color: #ffffff;
+}
+
+/* lab hero section  */
+
+.money-safe {
+    font-family: 'Rogerexmedium';
+    font-size: 23px;
+}
+
+.investing-h2 {
+    color: #fec00f;
+    font-size: 52px;
+    font-family: 'Rogerexbold';
+}
+
+.best-crypto,
+.partner,
+.future {
+    font-family: 'Rogerexbold';
+    font-size: 52px;
+    background: #000000;
+    background: linear-gradient(to right, #000000 -30%, #ffffff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.btn-border {
+    width: 80%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 25px 0;
+}
+
+.btn-exchange {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: #fec00f;
+    font-weight: 500;
+    font-family: 'latoMedium';
+}
+
+.btn-exchange a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn-exchange a:hover {
+    color: #fff;
+}
+
+.btn-rectangle {
+    border: 1px solid #fec00f;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: #000;
+
+    font-weight: 500;
+    font-family: 'latoMedium';
+}
+
+.btn-rectangle a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-rectangle a:hover {
+    color: #fec00f;
+}
+
+.arrow-icon {
+    width: 8%;
+}
+
+.hero-lab p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+/* Your trusted partner of cryptocurrency section  */
+
+.trusted-partner-area h2 {
+    font-family: 'Rogerexbold';
+    font-size: 32px;
+}
+
+.trusted-partner-area p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+.trusted {
+    color: #fec00f;
+}
+
+.partner {
+    font-size: 30px;
+}
+
+.card-title {
+    color: #fec00f;
+    font-family: 'Rogerexbold';
+}
+
+.card-subtitle {
+    font-family: 'Rogerexbold';
+}
+
+.card2 {
+    background: #fec00f;
+    color: #000;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Rogerexbold';
+}
+
+.card-link-a {
+    line-height: 80px;
+}
+
+.card-link-a:hover {
+    color: #000;
+}
+
+.card-body-text {
+    padding: 10px;
+    font-family: 'Rogerexbold';
+}
+
+.card-body-text a,
+.card-subtitle-text,
+.card2-title {
+    text-decoration: none;
+    color: #000;
+}
+
+.card1,
+.card3 {
+    background: rgb(71, 70, 70);
+    background: linear-gradient(90deg, rgba(71, 70, 70, 0.7903536414565826) 0%, rgba(14, 14, 15, 0.788) 100%, rgba(51, 53, 53, 0.829) 100%);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Trusted platform anytime & anywhere. */
+.platform {
+    color: #fec00f;
+}
+
+.Trusted-platform h2 {
+    font-family: 'Rogerexbold';
+}
+
+.Trusted-platform p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+.btn-question {
+    outline: none;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'latoMedium';
+}
+
+.btn-question a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-question a:hover {
+    color: #fec00f;
+}
+
+/* Build your crypto portfolio  */
+
+.crypto-portfolio h2 {
+    font-family: 'Rogerexbold';
+}
+
+.crypto-portfolio,
+.crypto {
+    color: #fec00f;
+}
+
+.crypto-portfolio p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+.card-body-content {
+    text-align: center;
+    padding: 30px;
+    background: rgb(71, 70, 70);
+    background: linear-gradient(90deg, rgba(71, 70, 70, 0.7903536414565826) 0%, rgba(14, 14, 15, 0.788) 100%, rgba(51, 53, 53, 0.829) 100%);
+    border-radius: 5px;
+}
+
+.card-body-content h2 {
+    font-family: 'Rogerexbold';
+}
+
+.card-body-content p {
+    font-family: 'RogerexRegular';
+    font-size: 14px;
+}
+
+.card-content {
+    background: #fec00f;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    margin-top: -50px;
+}
+
+.card-content h2 {
+    font-family: 'Rogerexbold';
+
+}
+
+.card-content p {
+    color: #000;
+    font-family: 'RogerexRegular';
+    font-size: 14px;
+}
+
+.dark-btn a {
+    color: #fec00f !important;
+    font-family: 'latoMedium' !important;
+    text-decoration: none;
+}
+
+.right-arrow {
+    width: 16px;
+}
+
+.black-arrow {
+    width: 16px;
+}
+
+
+/* What’s new we provide for you ?  */
+
+.border-left {
+    color: #bcbec0;
+    border-left: 2px solid;
+    padding-left: 8px;
+    border-image: linear-gradient(#fec00f, #fec00f);
+    border-image-slice: 1;
+}
+
+.what-new h2 {
+    font-family: 'Rogerexbold';
+}
+
+.what-new p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+.text-content h6 {
+    font-family: 'RogerexSemibold';
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #bcbec0;
+    font-family: 'latolight';
+
+}
+
+/* Start your crypto journey now! */
+.crypto-journey-area {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.crypto-journey-area h2 {
+    font-family: "Rogerexbold";
+    font-size: 52px;
+}
+
+.crypto-journey-area p {
+    color: #bcbec0;
+    font-family: 'latolight';
+    font-size: 20px;
+}
+
+.crypto-journey {
+    text-align: center;
+}
+
+.crypro-yellow {
+    color: #fec00f;
+    font-size: 52px;
+}
+
+/* Footer area section  */
+
+.footer-area {
+    /* background: #000; */
+    border-top: 1px solid #363535;
+}
+
+.footer-area p {
+    color: #bcbec0;
+    font-size: 16px;
+    font-family: 'latolight';
+}
+
+.footer-area h4 {
+    color: #bcbec0;
+    font-size: 25px;
+    font-family: 'RogerexSemibold';
+
+}
+
+.forhadbinamir {
+    color: white;
+    text-decoration: none;
+    font-family: "latolight";
+    font-size: 14px;
+}
+
+@media screen and (max-width:990px) {
+    .menu-items {
+        gap: 10px;
+    }
+
+    .btn-explore {
+        padding: 8px 12px;
+        border-radius: 10px;
+        background: #fec00f;
+        color: #000;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .btn-border {
+        width: 80%;
+        margin: auto;
+    }
+
+    .investing-h2 {
+        color: #fec00f;
+        font-size: 42px;
+    }
+
+    .card-content {
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        list-style: none;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        background: #000000;
+        width: 50%;
+        height: 100vh;
+        z-index: 9999;
+        padding: 10px 15px;
+    }
+
+    .menu-items li a {
+        color: #fec00f;
+        text-decoration: none;
+    }
+
+    .menu-items.visible {
+        display: none;
+    }
+
+    .card-text-body {
+        color: #000 !important;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    .btn-explore {
+        padding: 8px 10px;
+        border-radius: 10px;
+        background: #fec00f;
+        color: #000;
+        font-weight: 400;
+        font-size: 10px;
+        font-family: 'Lato', sans-serif;
+        display: none;
+    }
+
+    .best-crypto,
+    .partner,
+    .future {
+        font-size: 32px;
+    }
+
+    .investing-h2 {
+        font-size: 32px;
+    }
+
+    .btn-exchange,
+    .btn-rectangle {
+        padding: 8px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    .hero-lab p {
+        color: #bcbec0;
+        font-size: 15px;
+
+    }
+
+    .trusted-partner-area h2,
+    .Trusted-platform h2,
+    .crypto-journey-area h2,
+    .footer-area h4 {
+        font-family: 'Rogerexbold';
+        font-size: 20px;
+    }
+
+    .trusted-partner-area p,
+    .Trusted-platform p,
+    .crypto-portfolio p,
+    .what-new p,
+    .crypto-journey-area p,
+    .footer-area p {
+        color: #bcbec0;
+        font-family: 'latolight';
+        font-size: 15px;
+    }
+
+    .trusted {
+        color: #fec00f;
+    }
+
+    .partner,
+    .crypto,
+    .crypro-yellow,
+    .best-crypto {
+        font-size: 20px;
+    }
+
+    .card-text-body {
+        color: #000 !important;
+    }
+
+    .img-size {
+        width: 10%;
+    }
+
+    .store-img {
+        width: 30%;
+    }
+}
