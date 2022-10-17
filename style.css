@@ -36,9 +36,9 @@
 }
 
 body {
-    background: url(./images/Aelince\ Technologies\ Est\ Website_01-min.jpg);
+    background: url(./images/Optimized-background_bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     font-family: 'Lato', sans-serif;
 }
@@ -69,11 +69,42 @@ body {
     font-family: 'Lato', sans-serif;
     margin-top: 15px;
     cursor: pointer;
+    position: relative;
 }
 
 .menu-items li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.overlay {
+    display: none;
+}
+
+
+.menu-items li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+.dropdown_menu ul {
+    display: block;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.dropdown_menu ul li {
+    width: 100px;
+}
+
+.btn-dasktop {
+    display: none;
 }
 
 .btn-explore {
@@ -151,7 +182,7 @@ body {
 .btn-rectangle {
     border: 1px solid #fec00f;
     outline: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     background: #000;
 
@@ -177,6 +208,7 @@ body {
     font-family: 'latolight';
     font-size: 20px;
 }
+
 
 /* Your trusted partner of cryptocurrency section  */
 
@@ -424,12 +456,6 @@ body {
 
 }
 
-.forhadbinamir {
-    color: white;
-    text-decoration: none;
-    font-family: "latolight";
-    font-size: 14px;
-}
 
 @media screen and (max-width:990px) {
     .menu-items {
@@ -464,9 +490,25 @@ body {
 
 
 @media screen and (max-width:768px) {
-    .hamburger {
+    #hamburger {
         display: block;
         cursor: pointer;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 5;
+        display: none;
+        overflow: hidden;
+    }
+
+    .overlay.overlay-active {
+        display: block;
     }
 
     .menu-items {
@@ -475,13 +517,13 @@ body {
         justify-content: start;
         align-items: start;
         list-style: none;
-        position: absolute;
+        position: fixed;
         top: 0px;
         left: 0;
         background: #000000;
         width: 50%;
         height: 100vh;
-        z-index: 9999;
+        z-index: 10;
         padding: 10px 15px;
     }
 
@@ -490,12 +532,39 @@ body {
         text-decoration: none;
     }
 
-    .menu-items.visible {
+    .dropdown_menu {
+        background: #000000;
+        z-index: 2;
+    }
+
+    .dropdown_menu ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-items.active {
         display: none;
     }
 
     .card-text-body {
         color: #000 !important;
+    }
+
+    .btn-dasktop {
+        display: block;
+        width: 100% !important;
+    }
+
+    .btn-dasktop a {
+        color: #000 !important;
+    }
+
+    .btn-rectangle a {
+        color: #fec00f !important;
+    }
+
+    .mobile-btn {
+        display: none;
     }
 }
 
